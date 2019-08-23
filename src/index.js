@@ -1,8 +1,11 @@
-console.log('Salut les Titans');
+import React from 'react';
+import { render } from 'react-dom';
 
-// TODO: coder une application à succès :)
-// Attention, on va coder en ES6+
+// 1. Créer un composant React
+const MonPremierComposant = function() {
+    return <div>salut</div>
+};
 
-const sum = (x, y) => x + y;
-
-console.log(sum(2, 2));
+// 2. Afficher le composant dans la page
+const zoneDeTravail = document.querySelector('#root');
+render(<MonPremierComposant />, zoneDeTravail);

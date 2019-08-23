@@ -6,13 +6,19 @@
   "license": "MIT",
   "scripts": {
     "build:dev": "node_modules/.bin/webpack --mode development --module-bind js=babel-loader",
-    "build:prod": "node_modules/.bin/webpack --module-bind js=babel-loader"
+    "build:prod": "node_modules/.bin/webpack --module-bind js=babel-loader",
+    "start": "node_modules/.bin/webpack-dev-server --open --inline --content-base dist/ --mode development --module-bind js=babel-loader"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
