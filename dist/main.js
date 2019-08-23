@@ -1,0 +1,1 @@
+// Ici, on aura le résultat de la transpilation de src/index.js en version ES5 grâce à Babel.
